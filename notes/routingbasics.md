@@ -28,7 +28,8 @@ How does routing work?
     - Can we no longer use file names for routing? 
         - We can no longer use file names for routing
         - They all need to be called page.tsx. 
-        - every folder has to have a page componenet in it and it has to be that name 
-        - ane the fiel names themselves do not deternime the segments in a route
+        - every folder has to have a page componenet in it and it has to be that name- It MUST be page.tsx
+        - and the field names themselves do not deternime the segments in a route
         - only folders determine the segments in a route, and that's ONLY if there 
-        - are no parentheses around them
+        - are no parentheses around them. 
+            - so a folder for tuber, nightshade, drupes, etc. all names page.tsx
