@@ -33,3 +33,4 @@ How does routing work?
         - only folders determine the segments in a route, and that's ONLY if there 
         - are no parentheses around them. 
             - so a folder for tuber, nightshade, drupes, etc. all names page.tsx
+    - 
