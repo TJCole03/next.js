@@ -1,4 +1,4 @@
-// console.log(process.argv)
+console.log(process.argv)
 
 const ToDosPage = () => {
     return <div>ToDos</div>
