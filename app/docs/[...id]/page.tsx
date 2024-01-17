@@ -1,4 +1,4 @@
-const DocsIdPage = (params) => {
+const DocsIdPage = ({params}) => {
     return <div>asdf asdf asdf THIS IS THE DOCS ID PAGE {params.id} </div>
 }
 
