@@ -1,8 +1,16 @@
-const DocsIdPage = ({params}) => {
-    return <div>asdf asdf asdf THIS IS THE DOCS ID PAGE {params.id} {params.title} </div>
+const DocsPage = () => {
+    return <div>DOCS ;lkjaoienav</div>
 }
 
-export default DocsIdPage
+export default DocsPage
+
+// FROM PREVIOUS LESSONS (BELOW)
+
+// const DocsIdPage = ({params}) => {
+//     return <div>asdf asdf asdf THIS IS THE DOCS ID PAGE {params.id} {params.title} </div>
+// }
+
+// export default DocsIdPage
 
 // the page that you're on is underneath a dynamic segment
 // params are objects that have properties on it but are named the same
