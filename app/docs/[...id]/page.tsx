@@ -1,4 +1,5 @@
-const DocsPage = () => {
+const DocsPage = ({ params }) => {
+    console.log({params})
     return <div>DOCS ;lkjaoienav</div>
 }
 
