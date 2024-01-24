@@ -15,8 +15,32 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <h1>layout</h1>
+        <div>{children}</div>
+      </body>
     </html>
   )
 }
 // tsx files are the same as jsx
+// a layout is a component that wraps other layouts and pages
+// similar to an App.jsx
+// whole app gets rendered into the layout.tsx file
+// NO CONVENTION around naming of components
+// even though the route changes, the layout NEVER rerenders
+// layouts do not rerender; they'll always stay on the page no matter what route you go to
+// NESTED LAYOUTS
+// let's say the root layouts are so 
+// different that I need different layouts, but I need a root layout.Anyone wanna guess how 
+// you might do that in this file system ?>> Tell me it's not putting app in paren.>> 
+// Close[LAUGH] we do need more parens, but it's not putting app in parens. It's basically getting
+// rid of the root layout and making another group, maybe call it like marketing site or something
+// like that, andthen putting that in parens and putting its own layout in there.That way there is
+// never a layout on the root of the app.The only caveat with that is that, let's say you had ten 
+// route groups on your app.One of those route groups has to have a page on its root.So when someone
+// goes to slash, it renders, right ? So that is the only caveat.
+
+// TEMPLATES ARE LAYOUTS THAT CAN RERENDER ACROSS ROUTES 
+  // TWO USE CASES (SO FAR):
+    // ENTER/EXIT ANIMATIONS 
+    // useEffect LOGIC 
