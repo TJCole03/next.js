@@ -12,7 +12,8 @@ export const metadata = {
 const links = [
   { href: '/', label: 'Home'},
   { href: '/docs/id', label: 'Docs'},
-  { href: '/todos', label: 'Todos'}
+  { href: '/todos', label: 'Todos' },
+  { href: '/blog', label: 'Blog'}
 ]
 
 export default function RootLayout({
