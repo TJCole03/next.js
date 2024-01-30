@@ -1,6 +1,8 @@
+import styles from './style.module.css'
+
 const DocsPage = ({ params }) => {
     console.log({params})
-    return <div>DOCS ;lkjaoienav</div>
+    return <div className={styles.title} >DOCS ;lkjaoienav</div>
 }
 
 export default DocsPage
