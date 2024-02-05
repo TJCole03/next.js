@@ -1,5 +1,5 @@
 // import Image from 'next/image'
-import NewTodoForm from "@/components/NewTodoForm"
+// import NewTodoForm from "@/components/NewTodoForm"
 
 // const getData = async () => {
 //   // await new Promise((res) => setTimeout(() => res(), 2000))
@@ -14,7 +14,7 @@ const  Home = async () => {
     <>
       <div>Home - LCD Soundsystem</div>
       {/* <NewTodoForm onChange={() => console.log('oawivns;')} /> */}
-      <NewTodoForm />
+      {/* <NewTodoForm /> */}
     </>
   ) 
   

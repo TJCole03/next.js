@@ -1,21 +1,35 @@
-//for typing stuff in and make new todo
-//client component
-'use client'
-import { useState } from "react"
-
-const NewTodoForm = ( {onChange} ) => {
-    const [state, updateState] = useState('')
-    
+const NewTodoForm = ({ }) => {
     return (
         <div>
-            <form>
-                <input type="text" />
+            <form>                          
+                <input type="text" className="border border-black/25" />
             </form>
         </div>
     )
 }
 
 export default NewTodoForm
+
+
+
+//for typing stuff in and make new todo
+//client component
+// 'use client'
+// import { useState } from "react"
+
+// const NewTodoForm = ( {onChange} ) => {
+//     const [state, updateState] = useState('')
+    
+//     return (
+//         <div>
+//             <form>
+//                 <input type="text" />
+//             </form>
+//         </div>
+//     )
+// }
+
+// export default NewTodoForm
 
 /*
 REMEMBER THIS:
