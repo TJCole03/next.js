@@ -13,7 +13,7 @@ const links = [
   { href: '/', label: 'Home'},
   { href: '/docs', label: 'Docs'},
   { href: '/todos', label: 'Todos' },
-  { href: '/blog', label: 'Blog'}
+  // { href: '/blog', label: 'Blog'}
 ]
 
 export default function RootLayout({
