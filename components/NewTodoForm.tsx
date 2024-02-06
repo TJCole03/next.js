@@ -1,8 +1,10 @@
+import styles from './style.module.css'
+
 const NewTodoForm = ({ }) => {
     return (
         <div>
             <form>                          
-                <input type="text" className="border border-black/25" />
+                <input type="text" className={styles.input} /*className="border border-black/25"*/  />
             </form>
         </div>
     )
