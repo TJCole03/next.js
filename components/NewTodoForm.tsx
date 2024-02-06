@@ -4,9 +4,11 @@ import { newTodo } from '@/utils/actions'
 const NewTodoForm = ({ }) => {
     return (
         <div>
-            <form action={newTodo} >                          
+            <form action={newTodo} >
+            
                 <input name="albert" type="text" className={styles.input} /*className="border border-black/25"*/  />
-                <button type="submit" >Submit New Todo</button>
+                {/* <input name="price" type="text" className={styles.input} className="border border-black/25"  /> */}
+                <button type="submit" >  Submit New Todo</button>
             </form>
         </div>
     )
