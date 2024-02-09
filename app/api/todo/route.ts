@@ -1,7 +1,8 @@
 //export different HTTP verbs that i want to run when thte matching one is 
 //requested
-//get, post, put, delete, 
+//get, post, put, delete, options
 import { NextResponse } from "next/server"
+import db from '@/utils/db'
 
 /*
 when api/todo route gets triggered (user types it in), the function 
@@ -13,12 +14,24 @@ issues
 
 */
 export const GET = async (request: Request) => {
-    return NextResponse.json({ message: 'hi'})
+    const todos = await db.todo.findMany({})
+    return NextResponse.json({ data: todos})
 }
 
 export const POST = async (request: Request) => {
     const data = await request.json()
-    return NextResponse.json({ message: data})
+    const todo = await db.todo.create({data,})
+    return NextResponse.json({ message: todo})
+}
+
+export const PUT = async (request: Request) => {
+    const data = await request.json()
+    const todo = await db.todo.update(data)
+    return NextResponse.json({ message: todo})
+}
+
+export const OPTIONS = () => {
+
 }
 
 /*
