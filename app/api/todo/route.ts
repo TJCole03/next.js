@@ -71,7 +71,7 @@ The sweet thing about doing this is now the person's Internet is not a factor in
 because this happens on the server, which probably has fiber Internet. It's probably in some private network that's really quick. 
 And you're not relying on someone's network connection to determine how quickthey're gonna get the data back because it's not happening on the client.
 It's happening here, it's not going across the wire.
-
+Only waiting to download the HTML that is rendered
 
 */
 
