@@ -31,8 +31,8 @@ export const PUT = async (request: Request) => {
 }
 export const DELETE = async (request: Request) => {
     const data = await request.json()
-    const todo = await db.todo.delete({data,}) //not assignable to parameter of type...(see full message)
-    return NextResponse.json({ message: todo })
+    const todo = await db.todo.delete({data}) //not assignable to parameter of type...(see full message)
+    return NextResponse.json({ data: todo })
 }
 
 export const OPTIONS = () => {
